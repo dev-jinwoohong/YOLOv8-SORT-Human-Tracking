@@ -37,4 +37,5 @@ python ./inference/yolov8_sort.py
 ### 4. Result
 You can see the inference results during execution or check them in the result folder.
 
-![Inference Result](./result/yolov8_result.mp4[yolov8_result.mp4](result%2Fyolov8_result.mp4))
+https://github.com/dev-jinwoohong/human-detection/assets/70004933/8234f07a-890b-45c5-a011-f2cb38c8668d
+
