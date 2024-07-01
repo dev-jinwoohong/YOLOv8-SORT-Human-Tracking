@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 import cv2
-import numpy as np
-import torch
+import os
 import random
 import time
 
@@ -11,7 +10,7 @@ def get_random_color():
 
 
 model = YOLO("../resource/yolov8.pt")
-video = cv2.VideoCapture('../resource/walking_tour.mp4')
+video = cv2.VideoCapture('../resource/test.mp4')
 fps = video.get(cv2.CAP_PROP_FPS)
 frame_time = 1 / fps
 color_dict = {}
@@ -19,6 +18,7 @@ color_dict = {}
 width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+os.makedirs('./result', exist_ok=True)
 out = cv2.VideoWriter('../result/yolov8_result.mp4', fourcc, fps, (width, height))
 
 while True:
