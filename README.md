@@ -37,4 +37,4 @@ python ./inference/yolov8_sort.py
 ### 4. Result
 You can see the inference results during execution or check them in the result folder.
 
-![Inference Result](./result/yolov8_result.mp4)
+![Inference Result](./result/yolov8_result.mp4[yolov8_result.mp4](result%2Fyolov8_result.mp4))
