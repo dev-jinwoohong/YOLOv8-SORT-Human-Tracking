@@ -38,8 +38,10 @@ python ./inference/yolov8_sort.py
 You can see the inference results during execution or check them in the result folder.
 
 - YOLOv8 Result
+  
 ![yolov8_result](https://github.com/dev-jinwoohong/human-detection/assets/70004933/378a4883-fe81-4571-9bf9-33f019eac567)
 
 - YOLOv8 + SORT Result
+
 ![yolov8_sort_result](https://github.com/dev-jinwoohong/human-detection/assets/70004933/17ede0fe-0af2-4e79-97b2-e0ee5ccd747d)
 
