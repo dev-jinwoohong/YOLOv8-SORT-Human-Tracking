@@ -1,0 +1,8 @@
+filterpy
+scikit-image
+lap==0.4.0
+numpy
+matplotlib
+opencv-python
+ultralytics
+moviepy
