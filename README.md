@@ -28,7 +28,6 @@ yt-dlp https://youtu.be/ORrrKXGx2SE?si=30vqNKJDTSy8bEHO -f "bestvideo[ext=mp4]+b
 ### 2. Install Required Libraries
 
 Run the following command to install the necessary libraries:
-- python 3.8
 ```commandline
 pip install -r requirements.txt
 ```
