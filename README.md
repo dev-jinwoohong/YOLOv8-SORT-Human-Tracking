@@ -1,7 +1,7 @@
 
 ![facebook_cover_photo_2](https://github.com/dev-jinwoohong/YOLOv8-SORT-Human-Tracking/assets/70004933/e52fd191-57f8-4f35-9a7b-fc792e3957e3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/python-v3.8-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/dev-jinwoohong/YOLOv8-SORT-Human-Tracking.svg)](https://github.com/dev-jinwoohong/YOLOv8-SORT-Human-Tracking/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
