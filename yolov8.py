@@ -9,17 +9,20 @@ def get_random_color():
     return [random.randint(0, 255) for _ in range(3)]
 
 
-model = YOLO("../resource/yolov8.pt")
-video = cv2.VideoCapture('../resource/test.mp4')
+model = YOLO("resource/yolov8.pt")
+video = cv2.VideoCapture('resource/sample.mp4')
 fps = video.get(cv2.CAP_PROP_FPS)
 frame_time = 1 / fps
 color_dict = {}
 
-width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
-height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+downscale = 4
+
+width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH)) // downscale
+height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT)) // downscale
+
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-os.makedirs('./result', exist_ok=True)
-out = cv2.VideoWriter('../result/yolov8_result.mp4', fourcc, fps, (width, height))
+os.makedirs('result', exist_ok=True)
+out = cv2.VideoWriter('result/yolov8_result.mp4', fourcc, fps, (width, height))
 
 while True:
     start_time = time.time()
@@ -27,6 +30,8 @@ while True:
     ret, frame = video.read()
     if not ret:
         break
+
+    frame = cv2.resize(frame, (width, height))
 
     results = model(frame)
     height, width = frame.shape[:2]
