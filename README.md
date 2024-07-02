@@ -2,7 +2,7 @@
 
 ### 1. Download Required Files
 
-- Download YOLOv8 model:
+- Download YOLOv8 model put it in the `resource` folder:
   - [YOLOv8n](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8n.pt)
   - [YOLOv8s](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8s.pt)
   - [YOLOv8m](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m.pt)
@@ -11,27 +11,27 @@
 - Download a test video
 ```commandline
 sudo snap install yt-dlp
-yt-dlp https://youtu.be/ORrrKXGx2SE?si=30vqNKJDTSy8bEHO -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o ./resource/test.mp4
+yt-dlp https://youtu.be/ORrrKXGx2SE?si=30vqNKJDTSy8bEHO -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o ./resource/sample.mp4
 ```
 
 
 ### 2. Install Required Libraries
 
 Run the following command to install the necessary libraries:
-
+- python 3.8
 ```commandline
-pip install ultralytics opencv-python numpy torch
+pip install -r requirements.txt
 ```
 
 ### 3. Run
 1. Inference using yolov8 only.
 ```commandline
-python ./inference/yolov8.py
+python yolov8.py
 ```
 
 2. Inference using yolov8 + sort.
 ```commandline
-python ./inference/yolov8_sort.py
+python yolov8_sort.py
 ```
 
 ### 4. Result
