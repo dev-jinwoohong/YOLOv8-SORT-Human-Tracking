@@ -51,9 +51,13 @@ while True:
             seq_dets.append([F, -1, lx, ly, rx, ry, box.conf.item(), -1, -1, -1])
 
     dets = np.array(seq_dets)
-    trackers = mot_tracker.update(dets[:, 2:7])
-
-    obj_id = int(box.id.item()) if box.id is not None else random.randint(0, 100000)
+    if len(dets) > 0:
+        dets_for_tracker = dets[:, 2:6]
+        if dets.shape[1] > 6:
+            dets_for_tracker = np.column_stack((dets_for_tracker, dets[:, 6]))
+        trackers = mot_tracker.update(dets_for_tracker)
+    else:
+        trackers = np.empty((0, 5))
 
     dets = []
 
