@@ -48,7 +48,7 @@ while True:
                 color_dict[obj_id] = get_random_color()
             color = color_dict[obj_id]
 
-            cv2.rectangle(frame, (lx, ly), (rx, ry), color, 2)
+            cv2.rectangle(frame, (lx, ly), (rx, ry), color, 1)
 
             label = f"{obj_id}"
 
