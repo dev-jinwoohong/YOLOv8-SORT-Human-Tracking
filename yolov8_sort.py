@@ -74,7 +74,7 @@ while True:
         label_x = lx
         label_y = ly - 10 if ly - 10 > label_height else ly + 10
 
-        cv2.rectangle(frame, (lx, ly), (rx, ry), color, 2)
+        cv2.rectangle(frame, (lx, ly), (rx, ry), color, 1)
 
         cv2.rectangle(frame, (label_x, label_y - label_height), (label_x + label_width, label_y + label_height),
                       color, cv2.FILLED)
