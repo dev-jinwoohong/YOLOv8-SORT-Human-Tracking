@@ -21,7 +21,7 @@
 - Download a test video
 ```commandline
 sudo snap install yt-dlp
-yt-dlp https://youtu.be/ORrrKXGx2SE?si=30vqNKJDTSy8bEHO -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" -o ./resource/sample.mp4
+yt-dlp https://youtu.be/2SATljljXCY?si=y8Lbldme2RhQADCP -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" --download-sections "*00:00:00-00:00:17" -o ./resource/sample.mp4
 ```
 
 
@@ -47,10 +47,10 @@ python yolov8_sort.py
 You can see the inference results during execution or check them in the result folder.
 
 - YOLOv8 Result
-  
-![yolov8_result](https://github.com/dev-jinwoohong/human-detection/assets/70004933/378a4883-fe81-4571-9bf9-33f019eac567)
+
+![yolov8_result.gif](result/yolov8_result.gif)
 
 - YOLOv8 + SORT Result
 
-![yolov8_sort_result](https://github.com/dev-jinwoohong/human-detection/assets/70004933/17ede0fe-0af2-4e79-97b2-e0ee5ccd747d)
+![yolov8_result.gif](result/yolov8_sort_result.gif)
 
