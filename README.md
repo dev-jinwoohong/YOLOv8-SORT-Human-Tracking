@@ -46,6 +46,8 @@ python yolov8_sort.py
 ### 4. Result
 You can see the inference results during execution or check them in the result folder.
 
+My YOLO+SORT implementation shows promising object tracking, maintaining IDs across frames. However, ID switches still occur during occlusions.
+
 - YOLOv8 Result
 
 ![yolov8_result.gif](result/yolov8_result.gif)
@@ -54,3 +56,4 @@ You can see the inference results during execution or check them in the result f
 
 ![yolov8_result.gif](result/yolov8_sort_result.gif)
 
+I plan to implement Deep SORT in future updates to improve tracking stability, especially in challenging scenarios.
